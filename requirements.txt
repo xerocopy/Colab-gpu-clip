@@ -1,0 +1,21 @@
+ftfy
+regex
+tqdm
+omegaconf
+pytorch-lightning==1.6.5
+kornia
+einops
+stegano
+#exempi # installed in cli @ file:///exempi-2.5.2.tar.bz2
+python-xmp-toolkit
+imgtag
+imageio-ffmpeg
+opencv-python
+cython
+imageio
+torchvision -y
+torch -y
+torch -y  # yes twice
+torch==1.10.1+cu113
+torchvision==0.11.2
+torchaudio==0.10.1 -f https://download.pytorch.org/whl/torch_stable.html #this above version uses cudatoolkit==11.6
