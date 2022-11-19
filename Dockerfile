@@ -1,7 +1,7 @@
-FROM tensorflow/tensorflow:latest-jupyter
+FROM python:3.8-slim
 
+RUN apt update && \
+    apt install --no-install-recommends -y build-essential gcc && \
+    apt clean && rm -rf /var/lib/apt/lists/*
+COPY ./requirements.txt /requirments.txt
 
-
-RUN apt-get install libgl1-mesa-glx -y
-RUN apt-get install libglib2.0-0 -y
-RUN apt-get install -y exempi
