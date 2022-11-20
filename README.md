@@ -1,12 +1,13 @@
 ###prepare gpu on local machine######
 ...
 #####################################
-
-
+https://github.com/NVIDIA/nvidia-docker
 
 
 ##########docker base image###########
 tensorflow/tensorflow:latest-gpu-jupyter
+xerocopy/local-gpu-jupyter:nov2022
+DIGEST:sha256:fc519621eb9a54591721e9019f1606688c9abb329b16b00cc7107c23f14a6f24
 ######################################
 docker run -it --gpus all -p 8888:8888 -v "%CD%":/home tensorflow/tensorflow:nightly-gpu-jupyter
 
