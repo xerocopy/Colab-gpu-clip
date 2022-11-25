@@ -1,0 +1,9 @@
+version: '1.0-nov-2022'
+services:
+  jupyter:
+    image: tensorflow/tensorflow:latest-gpu-jupyter
+    restart: 'no'
+    volume:
+      - ./local-gpu-volume
+    ports:
+      - "8888:8888"

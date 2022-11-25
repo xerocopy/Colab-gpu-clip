@@ -1,3 +1,7 @@
+This is a repository to guide you to prepare gpu container on local machine (together with some usefull notebooks)
+
+
+
 ###prepare gpu on local machine######
 ...
 #####################################
@@ -13,7 +17,7 @@ docker run -it --gpus all -p 8888:8888 -v "%CD%":/home tensorflow/tensorflow:nig
 
 #########trouble shoots###############
 #ImportError: libGL.so.1: cannot open shared object file: No such file or directory#
-RUN apt-get install libgl1-mesa-glx
+RUN apt-get install libgl1-mesa-glx -y
 
 #install wget before one could download exempi
 RUN apt-get install wget
@@ -42,4 +46,7 @@ cd exempi-2.6.2
 make
 make install
 cd ..
+
+
+#####remove the downloaded files######
 

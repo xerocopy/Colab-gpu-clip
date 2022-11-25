@@ -1,0 +1,6 @@
+FROM tensorflow/tensorflow:latest-gpu-jupyter
+
+WORKDIR /home/jupyter
+
+
+ENTRYPOINT ["jupyter" ,"notebook", "--ip=*"]
