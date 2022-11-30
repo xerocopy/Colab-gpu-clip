@@ -1,5 +1,5 @@
 This is a repository to guide you to prepare gpu container on local machine (together with some usefull notebooks)
-
+(the docker container is finalised in my docker repo, but I will need some time to tidy this space up later .....)
 
 
 ###prepare gpu on local machine######
